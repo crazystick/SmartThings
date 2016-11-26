@@ -18,8 +18,8 @@ metadata {
 		capability "Sensor"
 		capability "Relative Humidity Measurement"
 		capability "Temperature Measurement"
+		capability "Carbon Dioxide Measurement"
 
-		attribute "carbonDioxide", "string"
 	}
 
 	simulator {
