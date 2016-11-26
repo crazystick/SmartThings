@@ -51,7 +51,7 @@ metadata {
 			]
 		}
 		valueTile("soundPressureLevel", "device.soundPressureLevel", inactiveLabel: false) {
-			state "soundPressureLevel", label:'${currentValue}db', unit:"Noise"
+			state "soundPressureLevel", label:'${currentValue}dB', unit:"Noise"
 		}
 		valueTile("pressure", "device.pressure", inactiveLabel: false) {
 			state "pressure", label:'${currentValue}mbar', unit:"Pressure"
