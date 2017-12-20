@@ -194,7 +194,7 @@ def zwaveEvent(physicalgraph.zwave.commands.multichannelv3.MultiChannelCmdEncap 
             map.name = "temperature2"
             map.displayed = true
             result = createEvent(map)
-            log.debug "Temp1 (2)"
+            log.debug "Temp2"
         }
 
         if (cmd.sourceEndPoint == 5) {
@@ -206,7 +206,7 @@ def zwaveEvent(physicalgraph.zwave.commands.multichannelv3.MultiChannelCmdEncap 
             map.name = "temperature3"
             map.displayed = true
             result = createEvent(map)
-            log.debug "Temp1 (3)"
+            log.debug "Temp3"
         }
 
         if (cmd.sourceEndPoint == 6) {
@@ -218,7 +218,7 @@ def zwaveEvent(physicalgraph.zwave.commands.multichannelv3.MultiChannelCmdEncap 
             map.name = "temperature4"
             map.displayed = true
             result = createEvent(name: "temperature4", value: TempCalc, descriptionText: "Temperature", temperature: TempCalc, precision: 2, scale: 0, scaledSensorValue: TempCalc, sensorType: 1, sensorValue: brvalues, size: 4)
-            log.debug "Temp1 (4)"
+            log.debug "Temp4"
         }
     }
 
